@@ -1,7 +1,7 @@
 {
   "apps" : [{
     "name"        : "file-manager",
-    "script"      : "node ./lib/index.js -p 8080 -d /mnt/",
+    "script"      : " ./lib/index.js -p 8080 -d /mnt/",
     "watch"       : "../",
     "log_date_format"  : "YYYY-MM-DD HH:mm Z"
   }]
