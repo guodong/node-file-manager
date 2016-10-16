@@ -96,13 +96,14 @@
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Cloudware File Manager <small>小提示：这里的文件与云件系统里Z盘里的文件同步</small></a>
+        <a class="navbar-brand" href="#">Cloudware File Manager</a>
       </div>
     </div>
   </nav>
 
   <div class="container">
     <div class="btn-toolbar">
+      <div class="alert alert-info" role="alert">小提示：这里的文件与云件系统里Z盘里的文件同步</div>
       <button type="button" class="btn btn-default" ng-disabled="FM.btnDisabled('download')" ng-click="FM.download()"><span class="glyphicon glyphicon-download"></span> Download</button>
       <button type="button" class="btn btn-default" ng-disabled="FM.btnDisabled('delete')" ng-click="FM.delete()"><span class="glyphicon glyphicon-remove"></span> Delete</button>
       <button type="button" class="btn btn-default" ng-disabled="FM.btnDisabled('move')" data-toggle="modal" data-target="#moveModal"><span class="glyphicon glyphicon-random"></span> Move</button>
@@ -111,7 +112,7 @@
       <button type="button" class="btn btn-default pull-right" ng-disabled="FM.btnDisabled('upload_file')" data-toggle="modal" data-target="#uploadFileModal"><span class="glyphicon glyphicon-upload"></span> Upload</button>
     </div>
 
-    <ol class="breadcrumb">
+    <ol class="breadcrumb" style="margin-top: 20px">
       <span class="glyphicon glyphicon-home"></span>
       <li ng-repeat="p in FM.curBreadCrumbPaths"><a href={{p.path}}>{{p.name}}</a></li>
     </ol>
